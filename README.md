@@ -63,6 +63,7 @@ typedef struct binary_tree_s heap_t;
 -------------------------------------------
 
 Email: johnniekips@gmail.com or swabulwenyi@gmail.com
+
 Project link: https://github.com/Scott-TechStar/binary_trees
 
 
@@ -71,6 +72,9 @@ Project link: https://github.com/Scott-TechStar/binary_trees
 The listed sites were helpful for insights on the project. You're free to access them if you need to.
 
 a) https://www.youtube.com/watch?v=H5JubkIy_p8
+
 b) https://en.wikipedia.org/wiki/Binary_search_tree
+
 c) https://www.programiz.com/dsa/tree-traversal
+
 d) https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm
