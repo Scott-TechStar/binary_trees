@@ -24,8 +24,9 @@ At the end of project, one should be able to define or explain:
 ## Data Structures
 
 In the header file include;
-*************************************************
+
 Basic Binary Tree:
+-----------------------------------------------------
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -44,19 +45,19 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 
-*************************************************
+----------------------------------------------------------
 Binary Search Tree
 typedef struct binary_tree_s bst_t;
 
-**********************************************
+--------------------------------------------------------------
 AVL Tree
 typedef struct binary_tree_s avl_t;
 
-******************************************************
+-------------------------------------------------------------
 Max Binary Heap
 typedef struct binary_tree_s heap_t;
 
-*******************************************
+--------------------------------------------------------
 
 ## Contacts
 -------------------------------------------
