@@ -21,6 +21,20 @@ struct binary_tree_s
     struct binary_tree_s *left;
     struct binary_tree_s *right;
 };
+/**
+ * Binary Search Tree
+ */
+typedef struct binary_tree_s bst_t;
+
+/**
+ * AVL Tree
+ */
+typedef struct binary_tree_s avl_t;
+
+/**
+ * Max Binary Heap
+ */
+typedef struct binary_tree_s heap_t;
 
 /**
  * struct levelorder_queue_s - Level order traversal queue.
@@ -36,21 +50,6 @@ typedef struct levelorder_queue_s
 /* Printing helper function */
 void binary_tree_print(const binary_tree_t *);
 typedef struct binary_tree_s binary_tree_t;
-
-/**
- * Binary Search Tree
- */
-typedef struct binary_tree_s bst_t;
-
-/**
- * AVL Tree
- */
-typedef struct binary_tree_s avl_t;
-
-/**
- * Max Binary Heap
- */
-typedef struct binary_tree_s heap_t;
 
 /* tasks */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -72,11 +71,6 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
-
-
-/**
- * Prototypes for the Advanced Tasks
- */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		const binary_tree_t *second);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
