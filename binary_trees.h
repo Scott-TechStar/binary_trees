@@ -96,9 +96,4 @@ bst_t *bst_min_val(bst_t *root);
 int btia_helper(const binary_tree_t *tree, int low, int hi);
 int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
-
-<<<<<<< HEAD
-#endif /*BINARY_TREES_H*/
-=======
-#endif /* BINARY_TREES_H */
->>>>>>> fcc6dfe7cc1bfe2dc5347ad8ae6a49bcf91b7f13
+#endif
