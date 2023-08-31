@@ -6,9 +6,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Data structures */
+
 /**
  * struct binary_tree_s - Binary tree node
- *
  * @n: Integer stored in the node
  * @parent: Pointer to the parent node
  * @left: Pointer to the left child node
@@ -16,24 +17,14 @@
  */
 struct binary_tree_s
 {
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
+	int n;
+	struct binary_tree_s *parent;
+	struct binary_tree_s *left;
+	struct binary_tree_s *right;
 };
-/**
- * Binary Search Tree
- */
+typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
-
-/**
- * AVL Tree
- */
 typedef struct binary_tree_s avl_t;
-
-/**
- * Max Binary Heap
- */
 typedef struct binary_tree_s heap_t;
 
 /**
@@ -49,9 +40,8 @@ typedef struct levelorder_queue_s
 
 /* Printing helper function */
 void binary_tree_print(const binary_tree_t *);
-typedef struct binary_tree_s binary_tree_t;
 
-/* tasks */
+/* Task function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
@@ -95,5 +85,20 @@ int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
 
+/* helper functions */
+int _pow_recursion(int x, int y);
+binary_tree_t *bta_helper(binary_tree_t *root, const binary_tree_t *first,
+			  const binary_tree_t *second);
+void btlo_helper(const binary_tree_t *tree, void (*func)(int), size_t level);
+int btic_helper(const binary_tree_t *tree, size_t index, size_t size);
+int btib_helper(const binary_tree_t *tree, int low, int hi);
+bst_t *bst_min_val(bst_t *root);
+int btia_helper(const binary_tree_t *tree, int low, int hi);
+int btih_helper(const binary_tree_t *tree);
+void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
 
+<<<<<<< HEAD
 #endif /*BINARY_TREES_H*/
+=======
+#endif /* BINARY_TREES_H */
+>>>>>>> fcc6dfe7cc1bfe2dc5347ad8ae6a49bcf91b7f13
