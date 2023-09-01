@@ -87,7 +87,19 @@ Function Prototypes
 | `112-array_to_bst.c`             | `bst_t *array_to_bst(int *array, size_t size);`                                                  |
 | `113-bst_search.c`               | `bst_t *bst_search(const bst_t *tree, int value);`                                               |
 | `114-bst_remove.c`               | `bst_t *bst_remove(bst_t *root, int value);`                                                     |
-
+| `115-O`                          |                        
+| `120-binary_tree_is_avl.c`       | `int binary_tree_is_avl(const binary_tree_t *tree);`                                             |
+| `121-avl_insert.c`               | `avl_t *avl_insert(avl_t **tree, int value);`                                                    |
+| `122-array_to_avl.c`             | `avl_t *array_to_avl(int *array, size_t size);`                                                  |
+| `123-avl_remove.c`               | `avl_t *avl_remove(avl_t *root, int value);`                                                     |
+| `124-sorted_array_to_avl.c`      | `avl_t *sorted_array_to_avl(int *array, size_t size);`                                           |
+| `125-O`                          |                        
+| `130-binary_tree_is_heap.c`      | `int binary_tree_is_heap(const binary_tree_t *tree);`                                            |
+| `131-heap_insert.c`              | `heap_t *heap_insert(heap_t **root, int value)`                                                  |  
+| `132-array_to_heap.c`            | `heap_t *array_to_heap(int *array, size_t size);`                                                |
+| `133-heap_extract.c`             | `int heap_extract(heap_t **root);`                                                               |
+| `134-heap_to_sorted_array.c`     | `int *heap_to_sorted_array(heap_t *heap, size_t *size);`                                         |
+| `135-O`                          |             
 ## Tasks :page_with_curl:
 
 * **0. New node**
@@ -233,6 +245,82 @@ Function Prototypes
   * Returns a pointer to the new root node of the tree after deletion.
   * If the node to be deleted has two children, it is replaced with its first
   in-order successor.
+
+* **29. Big O #BST**
+  * [115-O](1 answer/line): The average time complexities of those operations on a Binary Search Tree
+  * Inserting the value n
+  * Removing the node with the value n
+  * Searching for a node in a BST of size n
+
+* **30. Is AVL**
+  * [120-binary_tree_is_avl.c](./120-is_avl): C function that checks if a binary tree is a valid AVL Tree
+  * Returns 1 if tree is a valid AVL Tree, and 0 otherwise
+  * If tree is NULL, return 0
+
+* **31. AVL - Insert**
+  * [121-avl_insert.c](./121-avl_insert): C function that inserts a value in an AVL Tree
+  * Returns a pointer to the created node, or NULL on failure
+  * If the address stored in tree is NULL, the created node must become the root node
+
+* **32. AVL - Array to AVL**
+  * [122-array_to_avl.c](./122-avl_array): C function that builds an AVL tree from an array
+  * Returns a pointer to the root node of the created AVL tree, or NULL on failure
+  * array  is a pointer to the first element of the array to be converted
+
+* **33. AVL - Remove**
+  * [123-avl_remove.c](./123-avl_rm): C function that removes a node from an AVL tree
+  * Returns a pointer to the new root node of the tree after removing the desired value, and after rebalancing
+  * If the node to be deleted has two children, it must be replaced with its first in-order successor (not predecessor)
+
+* **34. AVL - From sorted array**
+  * [124-sorted_array_to_avl.c](./124-avl_sorted): C function that builds an AVL tree from an array
+  * Returns a pointer to the root node of the created AVL tree, or NULL on failure
+  * You can assume there will be no duplicate value in the array
+  * You are not allowed to rotate
+  * You can only have 2 functions in your file
+
+* **35. Big O #AVL Tree**
+  * [125-O](1 answer/line): The average time complexities of those operations on an AVL Tree
+  * Inserting the value n
+  * Removing the node with the value n
+  * Searching for a node in an AVL tree of size n
+
+* **36. Is Binary heap**
+  * [130-binary_tree_is_heap.c](./130-is_heap): C function that checks if a binary tree is a valid Max Binary Heap
+  * Returns 1 if tree is a valid Max Binary Heap, and 0 otherwise
+  * If tree is NULL, return 0 
+  * The last property must be recursively true for all nodes in Binary Tree
+
+* **37. Heap - Insert**
+  * [131-heap_insert.c](./131-heap_insert): C function that inserts a value in Max Binary Heap
+  * Returns a pointer to the created node, or NULL on failure
+  * If the address stored in root is NULL, the created node must become the root node.
+  * You have to respect a Max Heap ordering
+  * You are allowed to have up to 6 functions in your file
+
+* **38. Heap - Array to Binary Heap**
+  * [132-array_to_heap.c](./132-heap_array): C function that builds a Max Binary Heap tree from an array
+  * Returns a pointer to the root node of the created Binary Heap, or NULL on failure
+
+* **39. Heap - Extract**
+  * [133-heap_extract.c](./133-heap_extract): C function that extracts the root node of a Max Binary Heap
+  * Returns the value stored in the root node
+  * The root node must be freed and replace with the last level-order node of the heap
+  * Once replaced, the heap must be rebuilt if necessary
+  * If your function fails, return 0
+
+* **40. Heap - Sort**
+  * [134-heap_to_sorted_array.c](./134-heap_sort): C function that converts a Binary Max Heap to a sorted array of integers
+  * Where heap is a pointer to the root node of the heap to convert
+  * And size is an address to store the size of the array
+  * You can assume size is a valid address
+  * Since we are using Max Heap, the returned array must be sorted in descending order
+  
+* **41. Big O #Binary Heap**
+  * [135-O](1 answer/line): The average time complexities of those operations on a Binary Heap
+  * Inserting the value n
+  * Extracting the root node
+  * Searching for a node in a binary heap of size n
 
 ## Contacts
 -------------------------------------------
